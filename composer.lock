@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1b24524446d1f3cfca5c1c3a4d72b561",
+    "hash": "3d32ae54d8a2d4d63bdbfa8a7f12b564",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1846,17 +1846,17 @@
         },
         {
             "name": "epam/ci-bundle",
-            "version": "v1.0.0",
+            "version": "dev-master",
             "target-dir": "Epam/CiBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/epam-php-solutions/EpamCiBundle.git",
-                "reference": "a77470132f2c97b053b879102a0b95dd36454b9c"
+                "reference": "3a7c9f8f2328fbea32c50c38a10ed18954ca47a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/epam-php-solutions/EpamCiBundle/zipball/a77470132f2c97b053b879102a0b95dd36454b9c",
-                "reference": "a77470132f2c97b053b879102a0b95dd36454b9c",
+                "url": "https://api.github.com/repos/epam-php-solutions/EpamCiBundle/zipball/3a7c9f8f2328fbea32c50c38a10ed18954ca47a2",
+                "reference": "3a7c9f8f2328fbea32c50c38a10ed18954ca47a2",
                 "shasum": ""
             },
             "require": {
@@ -1916,7 +1916,7 @@
                 "jenkins",
                 "phing"
             ],
-            "time": "2013-10-24 13:11:50"
+            "time": "2013-10-29 09:59:52"
         },
         {
             "name": "mockery/mockery",
@@ -2909,6 +2909,7 @@
         "doctrine/doctrine-migrations-bundle": 20,
         "doctrine/migrations": 20,
         "doctrine/doctrine-fixtures-bundle": 0,
+        "epam/ci-bundle": 20,
         "phing/phing": 0,
         "ext-xsl": 0,
         "phpunit/phpunit": 0,

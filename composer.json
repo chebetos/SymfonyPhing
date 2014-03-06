@@ -24,7 +24,7 @@
         "doctrine/doctrine-fixtures-bundle": "@stable"
     },
     "require-dev": {
-        "epam/ci-bundle": "v1.0.0",
+        "epam/ci-bundle": "@dev",
         "phing/phing": "@stable",
         "ext-xsl": "@stable",
         "phpunit/phpunit": "@stable",
