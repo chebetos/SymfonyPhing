@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "a3527976d2c3d01e8c084b58b875264c",
+    "hash": "1b24524446d1f3cfca5c1c3a4d72b561",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -550,27 +550,34 @@
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
-            "version": "v1.0.0-beta1",
-            "target-dir": "Doctrine/Bundle/DoctrineMigrationsBundle",
+            "version": "dev-master",
+            "target-dir": "Doctrine/Bundle/MigrationsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
-                "reference": "7a63bb570bc3304f8caa8b7421b010617db846c1"
+                "reference": "667f20875f0dd3f3fce3e5a7d97cceac92a8e9d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/7a63bb570bc3304f8caa8b7421b010617db846c1",
-                "reference": "7a63bb570bc3304f8caa8b7421b010617db846c1",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/667f20875f0dd3f3fce3e5a7d97cceac92a8e9d1",
+                "reference": "667f20875f0dd3f3fce3e5a7d97cceac92a8e9d1",
                 "shasum": ""
             },
             "require": {
+                "doctrine/doctrine-bundle": "~1.0",
+                "doctrine/migrations": "~1.0@dev",
                 "php": ">=5.3.2",
-                "symfony/symfony": ">=2.0"
+                "symfony/framework-bundle": "~2.1"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
-                    "Doctrine\\Bundle\\DoctrineMigrationsBundle": ""
+                    "Doctrine\\Bundle\\MigrationsBundle": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -600,7 +607,7 @@
                 "migrations",
                 "schema"
             ],
-            "time": "2011-12-17 11:05:02"
+            "time": "2014-01-02 21:27:15"
         },
         {
             "name": "doctrine/inflector",
@@ -717,6 +724,66 @@
                 "parser"
             ],
             "time": "2013-01-12 18:59:04"
+        },
+        {
+            "name": "doctrine/migrations",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/migrations.git",
+                "reference": "4837b4afac4469c8740f33eae6bdcd8bd1545d2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/4837b4afac4469c8740f33eae6bdcd8bd1545d2e",
+                "reference": "4837b4afac4469c8740f33eae6bdcd8bd1545d2e",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "~2.0",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "symfony/console": "2.*",
+                "symfony/yaml": "2.*"
+            },
+            "suggest": {
+                "symfony/console": "to run the migration from the console"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\DBAL\\Migrations": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                }
+            ],
+            "description": "Database Schema migrations using Doctrine DBAL",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database",
+                "migrations"
+            ],
+            "time": "2014-03-04 01:42:11"
         },
         {
             "name": "doctrine/orm",
@@ -2840,6 +2907,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "doctrine/doctrine-migrations-bundle": 20,
+        "doctrine/migrations": 20,
         "doctrine/doctrine-fixtures-bundle": 0,
         "phing/phing": 0,
         "ext-xsl": 0,

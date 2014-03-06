@@ -18,7 +18,24 @@
         "sensio/distribution-bundle": "~2.3",
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "doctrine/doctrine-migrations-bundle": "@dev",
+        "doctrine/migrations": "@dev",
+        "doctrine/doctrine-fixtures-bundle": "@stable"
+    },
+    "require-dev": {
+        "epam/ci-bundle": "v1.0.0",
+        "phing/phing": "@stable",
+        "ext-xsl": "@stable",
+        "phpunit/phpunit": "@stable",
+        "squizlabs/php_codesniffer": "@stable",
+        "pdepend/pdepend": "@stable",
+        "phpmd/phpmd": "@stable",
+        "sebastian/phpcpd": "@stable",
+        "phploc/phploc": "@stable",
+        "covex-nn/phpcb": "@stable",
+        "zetacomponents/console-tools": "@stable",
+        "mockery/mockery": "@stable"
     },
     "scripts": {
         "post-install-cmd": [
